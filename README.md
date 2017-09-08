@@ -6,9 +6,10 @@
 
 It is used by [GeekPark](http://geekpark.net)
 
-# Currently: https://github.com/GeekPark/gpk_admin
-# Currently: https://github.com/GeekPark/gpk_admin
-# Currently: https://github.com/GeekPark/gpk_admin
+# More powerful version
+# GeekPark: https://github.com/GeekPark/gpk_admin
+# GeekPark: https://github.com/GeekPark/gpk_admin
+# GeekPark: https://github.com/GeekPark/gpk_admin
 
 Contact: github@ericjj.com
 
