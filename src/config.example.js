@@ -1,21 +1,16 @@
 const isDev = process.env.NODE_ENV === 'development'
-// 分别是
-// api url
-// 账号站 url
-// 主站 url
 
 const config = {
   development: {
-    api: '',
-    account: '',
-    main: ''
+    title: 'VMS',
+    icon: 'https://avatars1.githubusercontent.com/u/12462602?s=460&v=4',
+    author: 'Eric'
   },
   production: {
-    api: '',
-    account: '',
-    main: ''
+    title: 'VMS',
+    icon: 'https://avatars1.githubusercontent.com/u/12462602?s=460&v=4',
+    author: 'Eric'
   }
 }
 
 export default isDev ? config['development'] : config['production']
-
