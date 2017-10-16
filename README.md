@@ -1,32 +1,15 @@
 # VMS
-[![Build Status](https://travis-ci.org/ericjjj/vms.svg?branch=master)](https://travis-ci.org/ericjjj/vms)
-[![Code Climate](https://codeclimate.com/repos/58edfcb0bab24b0265000e3b/badges/be1cc8f745e432cd57ec/gpa.svg)](https://codeclimate.com/repos/58edfcb0bab24b0265000e3b/feed)
+[![Build Status](https://travis-ci.org/GeekPark/gpk_admin.svg?branch=master)](https://travis-ci.org/GeekPark/gpk_admin)
+[![Code Climate](https://codeclimate.com/github/GeekPark/gpk_admin/badges/gpa.svg)](https://codeclimate.com/github/GeekPark/gpk_admin)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
-
-
-It is used by [GeekPark](http://geekpark.net)
-
-# More powerful version
-# GeekPark: https://github.com/GeekPark/gpk_admin
-# GeekPark: https://github.com/GeekPark/gpk_admin
-# GeekPark: https://github.com/GeekPark/gpk_admin
-
-Contact: github@ericjj.com
-
-### ENV
-* Node.js 6+
-* MongoDB 3+
 
 ### Features
 
-* Vue.js 2+
-* Element UI
-* WYSIWYG Editor
-* Markdown Editor
-* Upload pictures to qiniu
-* Node.js backend
-* Role access control
-* Easy to deploy
+- [x] Vue.js 2+
+- [x] Element UI
+- [x] WYSIWYG Editor
+- [x] Easy to deploy
 
 ### How to Start
 
@@ -34,46 +17,32 @@ Contact: github@ericjj.com
 # clone project
 git clone https://github.com/ericjjj/vms.git
 
-# start backend, need mongodb
-cd backend/utils
-# modify config.js (qiniu)
-cp config.simple.js config.js
+cd src
+# modify config.js
+cp config.example.js config.js
 cd ..
-# start
-NODE_ENV=dev node index.js
-
-# start websites
-cd frontend/src
-# modify config.js (qiniu)
-cp config.simple.js config.js
-cd ..
+yarn install
 # start
 npm run dev
 ```
 
 ### Deploy
 ```bash
-cd frontend
-# build static files
 npm run build
-cd backend
-# modify processes.json
-# see http://pm2.keymetrics.io/docs/usage/deployment/
-pm2 deploy processes.json production setup
-# cp config.simple.js config.js
-pm2 deploy processes.json production
 ```
 
+### Demo
+![index](https://om4m02471.qnssl.com/gpk_admingpk_admin:index.png)
+![post-list](https://om4m02471.qnssl.com/gpk_admingpk_admin:post-ist.png)
+![editor](https://om4m02471.qnssl.com/gpk_admingpk_admin:markdown-editor.png)
+![editor](https://om4m02471.qnssl.com/gpk_admingpk_admin:wang-editor-02.png)
+![editor](https://om4m02471.qnssl.com/gpk_admingpk_admin:wang-editor-01.png)
+![column](https://om4m02471.qnssl.com/gpk_admingpk_admin:column.png)
+![topics](https://om4m02471.qnssl.com/gpk_admingpk_admin:topics.png)
 
-### Test
-```bash
-cd backend
-npm run test
-```
+...
 
 
 ### LICENSE
-MIT
-
-
+GNU General Public License v3.0
 
