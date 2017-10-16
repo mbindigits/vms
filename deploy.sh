@@ -1,2 +1,9 @@
 #! /bin/bash
-ssh -t www "pwd && cd gpk_admin_test/gpk_admin && git pull origin develop && yarn && npm run build"
+echo 'pack'
+npm run build
+tar -zcvf dist.tar.gz dist
+echo 'upload'
+scp dist.tar.gz  vms:/home/eric/vms
+rm -r dist.tar.gz
+echo 'unzip'
+ssh -t eric "cd vms && tar -xzvf dist.tar.gz"
